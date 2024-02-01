@@ -2,7 +2,7 @@
 
 Training requires a setting file (.yaml) and configurations data (extended-xyz or NumPy's npz as formats).
 
-## Example .yaml file ([adopted][https://github.com/mir-group/nequip/blob/main/configs/example.yaml]) for .xyz configs.
+## Example .yaml file ([adopted](https://github.com/mir-group/nequip/blob/main/configs/example.yaml)) for .xyz configs.
 
 ```
 # Two folders will be used during the training: 'root'/process and 'root'/'run_name'
@@ -165,7 +165,7 @@ per_species_rescale_scales: dataset_forces_rms
 
 ## Example sbatch file to submit training job on JUSTUS2
 
-```
+```bash
 #!/usr/bin/env bash
 #SBATCH -J nequip_comb_1
 #SBATCH --ntasks=4

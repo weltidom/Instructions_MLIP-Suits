@@ -1,10 +1,10 @@
-# Evaluate trained potential on test test
+# Evaluate trained potential on test data
 
-[Integrated command for evaluation][https://github.com/mir-group/nequip?tab=readme-ov-file#evaluating-trained-models-and-their-error] produces .xyz output not containing original data and thus makes analysis cumbersome.
+[Integrated command for evaluation](https://github.com/mir-group/nequip?tab=readme-ov-file#evaluating-trained-models-and-their-error) produces .xyz output not containing original data and thus makes analysis cumbersome.
 
 ## Evaluate training set utilizing NequIP ASE calculator
 
-```
+```python
 from ase.io import read, write
 import numpy as np
 
@@ -34,10 +34,11 @@ for split in splits:
     write(output, images=atoms_lst, format='extxyz')
     print(f"Split {split} evaluation finished")
 ```
+*Initialization of NequIP calculator per configuration quite inefficient; ASE's Trajectory class might offer better performance.*
 
 ## Example sbatch file to submit evaluation job on JUSTUS2
 
-```
+```bash
 #!/usr/bin/env bash
 #SBATCH -J nequip-eval_ase_0
 #SBATCH --ntasks=12
