@@ -1,6 +1,6 @@
 # Running ASE MD with MACE potential
 
-The device (CPU or CUDA) used for training is also needed for ASE MD runs (as opposed to LAMMPS).
+The same device (CPU or CUDA) used for training is also needed for ASE MD runs (as opposed to LAMMPS).
 
 ## Python script example
 Langevin thermostat MD run.

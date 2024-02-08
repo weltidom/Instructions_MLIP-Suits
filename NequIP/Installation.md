@@ -1,5 +1,5 @@
 # NequIP installation on JUSTUS2 cluster
-Installation of CUDA-dependent (NequIP)[https://github.com/mir-group/nequip] utilizing Conda.
+Installation of CUDA-dependent [NequIP](https://github.com/mir-group/nequip) utilizing Conda.
 
 ```bash
 conda create --name nequip_cuda

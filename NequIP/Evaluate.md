@@ -28,13 +28,13 @@ for split in splits:
         e=atoms.get_total_energy()
         f=atoms.get_forces()
         atoms.calc=None
-        atoms.info['NequIP energy'] = e
-        atoms.arrays['NequIP forces'] = f
+        atoms.info['NequIP_energy'] = e
+        atoms.arrays['NequIP_forces'] = f
 
     write(output, images=atoms_lst, format='extxyz')
     print(f"Split {split} evaluation finished")
 ```
-*Initialization of NequIP calculator per configuration quite inefficient; ASE's Trajectory class might offer better performance.*
+*Initialization of NequIP calculator for each configuration is quite inefficient; ASE's Trajectory class might offer better performance.*
 
 ## Example sbatch file to submit evaluation job on JUSTUS2
 

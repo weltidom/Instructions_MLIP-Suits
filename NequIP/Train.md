@@ -171,7 +171,7 @@ per_species_rescale_scales: dataset_forces_rms
 #SBATCH --ntasks=4
 #SBATCH --gres=gpu:1
 #SBATCH --time 2-00:00:00
-#SBATCH --output=train-%x.%j.out
+#SBATCH --output=--output=train-%x.%j.out
 
 source activate nequip_cuda
 module load compiler/intel
