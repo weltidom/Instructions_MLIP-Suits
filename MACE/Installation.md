@@ -27,11 +27,7 @@ pip install ./mace
 
 ## MACE on CUDA with multi-GPU branch
 ```bash
-conda create --name mace_multi-gpu
-conda activate mace_multi-gpu
-
 gh repo clone ACEsuit/mace -- --branch multi-GPU
-pip install ./mace
 ```
 
 ## MACE on CPU
@@ -39,6 +35,7 @@ pip install ./mace
 conda create --name mace_cpu
 conda activate mace_cpu
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
+
 gh repo clone ACEsuit/mace 
 pip install ./mace
 ```

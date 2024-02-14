@@ -3,7 +3,7 @@
 [Integrated command for evaluation](https://github.com/mir-group/nequip?tab=readme-ov-file#evaluating-trained-models-and-their-error) produces .xyz output not containing original data and thus makes analysis cumbersome.
 
 ## Evaluate training set utilizing NequIP ASE calculator
-
+Using the integrated ASE calculator, the model's inferences results can be added onto the originial .xyz data file.
 ```python
 from ase.io import read, write
 import numpy as np
@@ -34,7 +34,7 @@ for split in splits:
     write(output, images=atoms_lst, format='extxyz')
     print(f"Split {split} evaluation finished")
 ```
-*Initialization of NequIP calculator for each configuration is quite inefficient; ASE's Trajectory class might offer better performance.*
+*Initialization of NequIP calculator for each configuration is quite inefficient*
 
 ## Example sbatch file to submit evaluation job on JUSTUS2
 
