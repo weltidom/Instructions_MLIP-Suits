@@ -33,7 +33,7 @@ make install
 ```
 
 ## CUDA version
-``bash
+```bash
 mkdir lammps-mace-gpu
 cd lammps-mace-gpu
 git clone --branch=mace --depth=1 https://github.com/ACEsuit/lammps
